@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 13;
+}
+nav .main{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 21px;
+}
+.main .disc a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+}
+.main .disc a:hover{
+    color: aqua;
+}
+.main ul{
+    display: inline-flex;
+}
+.main ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.main ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: whitesmoke;
+    padding: 8px 12px;
+}
+.main ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.image{
+    background: url(ab.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.image::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0 0 0 0.4);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 21px;   
+}
+.center .tittle{
+    color: whitesmoke;
+    font-size: 52px;
+   font-weight: 500;
+}
+.center .sub{
+    color: whitesmoke;
+    font-size: 52px;
+    font-weight: 500;
+}
+.center .btns{
+    margin-top: 22px;
+}
+.center .btns button{
+    height: 52px;
+    width: 172px;
+    border-radius: 7px;
+    border: none;
+    margin: 0 12px;
+    border: 2px solid rgb(231, 222, 222);
+    font-size: 21px;
+    font-weight: 600;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+    color: #fff;
+    background: none;
+}
+.center .btns button:first-child:hover{
+    background-color: #fff;
+    color: black;
+}
